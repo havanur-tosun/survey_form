@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" href="./images/Clarusway_logo.png">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Clarusway Survey From</h1>
+        <p id="describes">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form action="result.html" method="GET" target="_blank">
+        <div class="credentials">
+            <label for="fname">Name</label> <br>
+            <input type="text" name="firstname" id="fname" placeholder="Enter your name" required><br><br>
+            <label for="lname">Surname</label> <br>
+            <input type="text" name="lastname" id="lname" placeholder="Enter your Surname" required><br><br>
+            <label for="email">Email</label> <br>
+            <input type="email" name="emails" id="email" placeholder="user@clarusway.com" required>
+        </div><br>
+        <div class="role">
+            <p>Which option best describes your current role?</p>
+            <select name="role" id="dropdown" required>
+                <option disabled selected>Select current role</option>
+                <option value="role1">Student</option>
+                <option value="role2">Teacher</option>
+                <option value="role3">Full Time Job</option>
+                <option value="role4">Part Time Job</option>
+                <option value="role5">Full Time Learner</option>
+                <option value="role6">Prefer not to say</option>
+            </select>
+        </div> <br>
+        <div class="recommend">
+            <p>Would you recommend Clarusway to a friend?</p>
+            <input type="radio" name="recommend" id="recommend1" checked>
+            <label for="recommend1">Definitely, Yes</label><br>
+            <input type="radio" name="recommend" id="recommend2">
+            <label for="recommend2">Maybe</label><br>
+            <input type="radio" name="recommend" id="recommend3">
+            <label for="recommend3">Not sure</label><br>
+            <input type="radio" name="recommend" id="recommend4">
+            <label for="recommend4">Definitely, No</label><br>
+        </div> <br>
+        <div class="feature">
+            <p>What is your favorite feature of Clarusway?</p>
+            <select name="feature" id="dropdown" required>
+                <option disabled selected>select an option</option>
+                <option value="courses">Courses</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="mentors">Mentors</option>
+            </select>
+        </div> <br>
+        <div class="favorite">
+            <p>What would you like to see improved?(Check all that apply)</p>
+            <input type="checkbox" name="lessons" id="lesson1" value="front-end projects">
+            <label for="lesson1">Front-end Projects</label> <br>
+            <input type="checkbox" name="lessons" id="lesson2" value="back-end projects">
+            <label for="lesson1">Back-end Projects</label><br>
+            <input type="checkbox" name="lessons" id="lesson3" value="data science">
+            <label for="lesson3">Data Science</label><br>
+            <input type="checkbox" name="lessons" id="lesson4" value="additional courses">
+            <label for="lesson4">Additional Courses</label>
+        </div>
+        <br>
+        <div class="feedback">
+            <p>Any comments or suggestions?</p>
+            <textarea name="message" id="comments" cols="30" rows="10" placeholder="Enter your comment here...Thanks for your comments...."></textarea></textarea>
+        </div>
+        <div class="submit">
+            <button type="submit" id="form-button">Submit</button>
+            <!-- <input type="submit" id="submit-button" value="Submit"> -->
+        </div>
+    </form>
+</body>
+</html>

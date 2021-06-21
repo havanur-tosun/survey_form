@@ -1,0 +1,45 @@
+body {
+    background-color: seagreen;
+    background-image: url(./images/blur-background-og.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    width: 370px; 
+    /* border: 4px groove black;  */
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 30px;
+    margin-left: 585px;
+    color: sienna;
+    /* background-color: seagreen; */
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+} 
+
+#describes {
+    letter-spacing: 1px;
+    text-indent: 15px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
+
+form{
+    width: 500px;
+    background-color: seagreen;
+    opacity: 0.9;
+    border: 2px dashed black;
+    margin-left: 500px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
